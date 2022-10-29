@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetoemgrupo</title>
+</head>
+      <link rel="stylesheet" href="index.css">
+          <script src="index.js"></script>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+        <div class="logo">
+            <h1><a href="home.html"><img id='img-logo' src="../PADARIA PROJETO/images/logo.png" alt="logo"></a></a></h1>
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="quemsomos.html" class="nav-link">Quem somos</a></li>
+                <li class="nav-item"><a href="contatos.html" class="nav-link"> Contatos</a></li>
+            </ul>
+        </div>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+                </div>
+    </nav>
+        <div class="menu-openner"><span>0</span>🛒</div>
+</header>
+
+
+    <div class="formulario">
+        <div class="titulo-form"><h1>Fale conosco</h1></div>
+
+        <div class="titulo-form"><h1>Preencha o campo abaixo:</h1></div>
+
+    </div>
+
+    <section>
+        <h2>Contato</h2>
+
+        
+
+        <form action="https://api.staticforms.xyz/submit" method="post">
+
+            <input type="text" name="name" placeholder="Nome:" autocomplete="off" required onimput="nameValidate">
+            <input type="email" name="email" placeholder="Email:" autocomplete="off" required>
+
+        
+
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefone:">
+            
+
+    
+             <select>
+                <option>Assunto:</option>
+                <option>Sugestão</option>
+                <option>Elogio</option>
+                <option>Reclamaçâo</option>
+             </select> 
+
+             <br><br><br>
+
+
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+
+            
+        </form>
+    </section>
+
+    <footer>
+
+        <div class="footer-box"><div class="endereço">
+                <h4>Endereço:</h4>
+                <ul>
+                    <li>Rua Dona Isabel, 700</li>
+                    <li>Bairo Bonsucesso,</li>
+                    <li>Rio de Janeiro - RJ,</li>
+                    <li>CEP 21032-060</li>
+                </ul>
+
+            </div></div>
+
+        <div class="footer-box">
+
+            <div class="menu">
+                <h2>Menu</h2>
+                <ul>
+                     <li><a href="quemsomos.html">Quem somos</a></li>
+                     <li><a href="nossaequipe.html">Nossa equipe</a></li>
+                     <li><a href="Produtos.html">Produtos</a></li>
+                </ul>
+            </div>
+
+         </div>
+
+        <div class="footer-box">
+
+            <div class="social">
+                <h2>Fale conosco</h2>
+                <ul>
+                    <li><A href="#">Facebook</A></li>
+                    <li><A href="#">Instagram</A></li>
+                    <li><A href="#">Youtube</A></li>
+                    <li><A href="#">WhatsApp</A></li>
+
+                </ul>
+            </div>
+            
+        </div>
+
+</footer>
+
+</body>
+</html>

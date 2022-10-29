@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+body{
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100vh;*/ 
+}
+
+
+header {
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    height:80px;
+    box-shadow: 0px 3px 10px #464646;
+    background-color: #000000;
+    display:flex; /* none; */
+    justify-content:space-between; /* flex-end; */
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 1rem;
+    color: #fff;
+}
+
+.menu-openner {
+    margin-right: 15px;
+    font-size: 26px;
+    background-color: #e2eae1;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-openner span {
+    margin-right:10px;
+}
+
+
+
+
+#img-logo {
+    width: 120px;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+
+/*quem somos*/
+
+.main-whoweare{
+    display: flex;
+    flex-direction: column;
+    margin: 150px 30px; 
+    width: 90%;
+
+
+ }
+
+.text-nos{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 25px;
+    border-radius: 40px;
+    background-color:  black;
+    height: 150px;
+        
+}
+
+.text-nos h1{
+    margin-bottom: 0;
+    text-align: center;
+    
+}
+       
+.text-nos p{
+    text-align: center;
+}
+
+/* nossa equipe */
+
+.all{
+ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.us{
+    height: 500px;
+    width: 280px;
+    border: 5px black solid;
+    border-radius: 60px;
+    margin-top: 50px;
+    padding: 5px;
+
+}
+
+
+
+.picture{
+    height: 200px;
+    width: 200px;
+    margin: 5px 30px;
+    border-radius: 90px; 
+    border: 5px black solid;
+      
+
+}
+
+.us h2, h3{
+    text-align: center;
+    color: #000000;
+}
+
+.us p{
+    text-align: center;
+    color: #000000;
+}
+
+/* Botão p/ voltar ao topo*/
+
+
+
+
+/*formulário*/
+.main-formula
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    height:90px;
+    width: 100%;
+
+}
+
+.titulo-form h1{
+    text-align: center;
+}
+
+
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: black;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario h1{
+    color: black;
+}
+
+section h2{
+    color: white;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: yellow;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+    color: black;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+    color: #101026
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #101026;
+    color: white;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: blue;
+    color: #101026;
+    border-radius: 16px;
+}
+
+form select {
+    color: black;
+}
+
+
+/*Footer*/
+
+footer{
+    height: 200px;
+    width: 100%;
+    margin-top: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    margin-top: 50px;
+    margin-right: 0;
+    
+
+}
+
+footer li{
+    list-style: none;
+}
+
+
+
+.footer-box{
+    height: 150px;
+    width: 200px;
+    margin-top: 50px;
+    /* margin: 90px 50px; */
+
+
+}
